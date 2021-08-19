@@ -5,6 +5,7 @@
   padding: 0;
   transition: background-color 1s ease, color .4s ease;
 }
+
 [data-theme="light"] {
   --primary: #f8f8f8;
   --primary-light: #f5f4f4;
@@ -67,7 +68,7 @@ li {
 }
 body {
   color: var(--secondary);
-  transition: background-color 2s ease;
+  transition: background-color 1.5s ease;
 }
 .contenedor {
   max-width: 1400px;
@@ -303,7 +304,7 @@ input:checked+.slider:before {
    /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #9733EE, #DA22FF);
    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-size: cover;
 
   }
 
@@ -440,7 +441,7 @@ input:checked+.slider:before {
 }
 .proyectos_flex {
   display: flex;
-
+  background-color: var(--primary);
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -476,6 +477,7 @@ input:checked+.slider:before {
     flex: 0 1 100%;
     grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
     width: 100%;
+    background-color: #6b63ff1c;
 
   }
 }
