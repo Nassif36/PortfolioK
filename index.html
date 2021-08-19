@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Khalil</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/f69e951070.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;0,600;1,200&family=Libre+Franklin:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+        
+    <header class="site_header" id="inicio">
+        <div class="barra ">
+            <div class="contenedor">
+
+            
+            <div class="barra_logo">
+                <a href="#inicio">
+                    <h2>K</h2>
+                </a>
+                <button>
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="barra_nav">
+                <div class="nav">
+                    <li>
+                        <a href="#tecnologies">Tecnologías</a>
+                    </li>
+                    <li>
+                        <a href="#about">Acerca</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#proyectos">Proyectos</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" name="check" id="checkbox" />
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+    <article class="article_hero">
+        <div class="hero_flex contenedor">
+            <div class="hero_item">
+                <div class="hero_text">
+                    <h1>desarrolla tú emprendimiento, <br> 
+                      Desarrolla tú  web.</h1>
+                </div>
+            </div>
+            <div class="hero_item">
+                <img src="./img/undraw_Create_re_57a3.svg" alt="">
+            </div>
+        </div>
+    </article>
+    <article class="article_tecnologias">
+         <h3 class="title" id="tecnologies">Tecnologias</h3>
+        <div class="tecnologias_flex contenedor" >
+            
+            <div class="tecnologia slide-in from-up">
+                <h3>html5</h3>
+                <i class="fab fa-html5"></i>
+                <p>estructura</p>
+            </div>
+            <div class="tecnologia slide-in from-down">
+                <h3>css3</h3>
+                <i class="fab fa-css3-alt"></i>
+                <p>estilizado</p>
+            </div>
+            <div class="tecnologia slide-in from-up">
+                <h3>sass</h3>
+                <i class="fab fa-sass"></i>
+                <p>estilizado</p>
+            </div>
+            <div class="tecnologia slide-in from-down">
+                <h3>js</h3>
+                <i class="fab fa-js"></i>
+                <p>interactividad</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="article_about" >
+        <h3 class="title" id="about">acerca de mi</h3>
+        <div class="about_flex contenedor" >
+            <div class="about_item ">
+                <img class="shadow" src="./img/vitae.jpg" alt="">
+            </div>
+            <div class="about_item">
+                <p>Mi nombre es Khalil, tengo 20 años, soy autodidacta y me gusta trabajar en equipo tanto como cumplir mis objetivos</p>
+            </div>
+        </div>
+    </article>
+    <main class="main_proyectos" id="proyectos">
+        <div class="proyectos_flex contenedor" >
+            <div class="proyectos_texto fade-in from-left">
+                <h3 class="title">proyectos</h3>
+            </div>
+            <div class="proyectos_grid fade-in from-right">
+                <a class="proyecto" href="https://nassif36.github.io/MakeUpBeauty/">
+                    <div class="proyecto_img">
+                        <img src="./img/makeup.png" alt="">
+                    </div>
+                    <p>Make Up & Beauty</p>
+                </a>
+                <a class="proyecto" href="https://nassif36.github.io/ModaWinter/">
+                    <div class="proyecto_img">
+                        <img src="./img/moda.png" alt="">
+                    </div>
+                    <p>Moda </p>
+                </a>
+                <a class="proyecto" href="https://nassif36.github.io/hostelcarrusel/">
+                    <div class="proyecto_img">
+                        <img src="./img/carru.png" alt="">
+                    </div>
+                    <p>Hostel Carru</p>
+                </a>
+                <a class="proyecto" href="https://nassif36.github.io/watchshop/">
+                    <div class="proyecto_img">
+                        <img src="./img/watch.png" alt="">
+                    </div>
+                    <p>Watch Shop</p>
+                </a>
+      
+            </div>
+        </div>
+    </main>
+    <footer class="footer_contacto">
+        <h3 class="title" id="contacto">Contacto</h3>
+        <div class="contacto_flex">
+            <form action="#">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="asunto" placeholder="Asunto">
+                </div>
+                <div class="campo">
+                    <label for="texto">Mensaje</label>
+                    <textarea name="texto" placeholder="Tú consulta no molesta"></textarea>
+                </div>
+                 <button class="btn_form">
+                     enviar
+                 </button>
+            </form>
+           
+        </div>
+        
+    </footer>
+    <div class="pie">
+        <div class="pie_texto">
+            <p>Hecha por Khalil Bichara &copy; Todos los Derechos Reservados</p>
+        </div>
+
+        <div class="pie_redes">
+            <div class="redes">
+              <a href="https://www.linkedin.com/in/khalil-bichara-084013218/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+        </div>
+    </div>
+    <script src="js/observer.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
