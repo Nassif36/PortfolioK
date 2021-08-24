@@ -304,11 +304,7 @@ input:checked+.slider:before {
   width: 100%;
   max-width: 650px;
 }
-#brazo {}
 
-g#Codigo {
-
-}
 /** TECNOLOGIAS **/
 .article_tecnologias {
   text-align: center;
@@ -398,8 +394,11 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
 
   border-top: 1px solid var(--shadow-color);
   border-bottom: 1px solid var(--shadow-color);
-}
 
+}
+.article_about .title {
+  color: #f1f1f1;
+}
 .about_flex {
   display: flex;
   align-items: center;
@@ -416,14 +415,15 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
 .about_item {
   margin: .5em 2em;
 
+
 }
 
 .about_item img {
   width: 100%;
   max-width: 330px;
-  border-radius: 15px;
+  border-radius: 100%;
   border: 1px solid var(--secondary);
-  box-shadow: 13px 13px var(--secondary);
+  box-shadow: 13px 13px #eb20a718;
 }
 
 .about_item:nth-of-type(2) {
