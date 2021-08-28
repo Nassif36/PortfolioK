@@ -1,7 +1,7 @@
 
     // Navigation 
 
-    var menu = document.querySelector('.barra_nav');
+    var menu = document.querySelector('.barra');
     var menuBtn = document.querySelector(".barra_logo button");
 
     menuBtn.addEventListener('click', () => {
