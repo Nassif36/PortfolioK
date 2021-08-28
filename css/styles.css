@@ -520,6 +520,9 @@ input:checked+.slider:before {
     flex-direction: column;
     padding: 2% 2em;
   }
+  .proyectos-mobile .tecnologia {
+    max-width: 250px;
+  }
 
 }
 .proyecto {
