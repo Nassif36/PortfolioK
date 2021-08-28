@@ -471,6 +471,7 @@ input:checked+.slider:before {
 @media (max-width: 1200px) {
   .swiper-container {
     max-width: 100vw;
+    flex: 1 1 100%;
   }
 }
 .swiper-pagination-bullet-active {

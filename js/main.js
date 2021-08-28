@@ -36,7 +36,7 @@
             barraFixed.style.top = "0";
 
         } else {
-            barraFixed.style.top = "-14vh";
+            barraFixed.style.top = "-54vh";
 
         }
         prevScrollpos = currentScrollPos;
