@@ -277,20 +277,14 @@ input:checked+.slider:before {
   padding: 1% 0;
   min-height: 100vh;
   position: relative;
+  z-index: 5;
 }
-.svg_animation {
-position: absolute;
-  margin: 0 auto;
-  right: 0;
-  bottom: -9%;
-  width: 100%;
-  transform: scaleY(70%);
-  z-index: 0;
-  left: 0;;
-}
+
+
 
 .hero_item {
   flex: 0 calc(50% - 3%);
+
 
 }
 .hero_text {
@@ -298,8 +292,9 @@ position: absolute;
   justify-content: flex-start;
   align-items:center;
   flex-direction: column;
-  text-transform: capitalize;
-  min-height: 30vh;
+  text-transform: capitalize; 
+  min-height: 36vh;
+
 }
 .hero_text h1 {
   text-shadow:3px 3px 1px #6b63ff6b;
@@ -330,6 +325,8 @@ position: absolute;
   padding: 5% 0 0 0;
   max-width: max-content;
   text-transform: capitalize;
+  position: relative;
+  z-index: 12;
 }
 @media (max-width: 550px) {
   .title {
