@@ -491,7 +491,7 @@ input:checked+.slider:before {
     flex: 0 1 100%;
     grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
     width: 100%;
-    background-color: #6b63ff1c;
+    background-color: #ffffff05;
 
   }
 }
