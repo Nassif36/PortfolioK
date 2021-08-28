@@ -503,19 +503,21 @@ input:checked+.slider:before {
     background-color: #ffffff05;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+
   }
-  .proyecto {
-    margin: 0 auto;
-  }
+
+}
+.proyectos-mobile {
+  display: none;
 }
 @media (max-width: 550px) {
   .swiper-container {
-    flex: 0 1 100%;
-    max-width: inherit;
+    display: none;
   }
-  .proyectos_grid {
-    width: 100%;
+  .proyectos-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2em;
   }
   .proyectos_grid {
     grid-template-columns: 1fr;
