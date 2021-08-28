@@ -511,7 +511,8 @@ input:checked+.slider:before {
   display: none;
 }
 @media (max-width: 550px) {
-  .swiper-container {
+  .swiper-container,
+  .proyectos_grid {
     display: none;
   }
   .proyectos-mobile {
