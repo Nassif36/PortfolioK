@@ -520,9 +520,7 @@ input:checked+.slider:before {
     flex-direction: column;
     padding: 2% 2em;
   }
-  .proyectos_grid {
-    grid-template-columns: 1fr;
-  }
+
 }
 .proyecto {
   color: var(--primary);
