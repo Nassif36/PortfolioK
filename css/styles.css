@@ -512,8 +512,10 @@ input:checked+.slider:before {
 }
 @media (max-width: 550px) {
   .swiper-container,
+  .swiper-container.slide-in.from-down,
   .proyectos_grid {
-    display: none;
+    display: none!important;
+    transform: translate(0);
   }
   .proyectos-mobile {
     display: flex;
@@ -522,6 +524,7 @@ input:checked+.slider:before {
   }
   .proyectos-mobile .tecnologia {
     max-width: 250px;
+
   }
 
 }
