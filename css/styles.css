@@ -87,7 +87,7 @@ body {
   transition: top 1s;
 
   background-color: var(--primary-light);
-  z-index: 5;
+  z-index: 15;
   border-bottom: 1px solid var(--shadow-color);
 }
 
@@ -154,7 +154,7 @@ body {
         flex-direction: column;
         transform: translateX(-300%);
         position: relative;
-        z-index: 1;
+        z-index: 5;
         padding: .5em 0;
         min-width: 100%;
         background-color: var(--secondary);
@@ -188,7 +188,7 @@ body {
         background-color: transparent;
         color: var(--primary);
         cursor: pointer;
-        z-index: 4;
+        z-index: 16;
         outline: none;
     }
 
@@ -326,11 +326,7 @@ input:checked+.slider:before {
   position: relative;
   z-index: 12;
 }
-@media (max-width: 550px) {
-  .title {
-    font-size: 2rem;
-  }
-}
+
 .title:after {
   content: '';
   display: block;
@@ -358,6 +354,7 @@ input:checked+.slider:before {
   color: var(--secondary-light);
 
 }
+
 .tecnologia:hover {
   background-color: var(--secondary-light);
   color: var(--primary);
@@ -372,6 +369,18 @@ input:checked+.slider:before {
 }
 .tecnologia i {
   font-size: clamp(5.5rem, 6.2rem, 7rem);
+}
+@media (max-width: 550px) {
+  .title {
+    font-size: clamp(2rem, 2.5rem, 2.7rem);
+  }
+
+  .tecnologia {
+    padding: .5em .8em;
+  }
+  .tecnologia i {
+    font-size: clamp(2.2rem, 2.4rem, 2.7rem);
+  }
 }
 .tecnologia p {
   text-transform: uppercase;
@@ -476,6 +485,7 @@ input:checked+.slider:before {
   gap: 1em;
   grid-template-columns: repeat(2, 50%);
 }
+
 @media (max-width: 1050px) {
   .main_proyectos {
     padding:0;
@@ -496,6 +506,11 @@ input:checked+.slider:before {
   }
   .proyecto {
     margin: 0 auto;
+  }
+}
+@media (max-width: 550px) {
+  .proyectos_grid {
+    grid-template-columns: 1fr;
   }
 }
 .proyecto {
