@@ -510,8 +510,11 @@ input:checked+.slider:before {
   }
 }
 @media (max-width: 550px) {
-  .proyectos_grid {
+  .swiper-container {
+    flex: 0 1 100%;
     max-width: inherit;
+  }
+  .proyectos_grid {
     width: 100%;
   }
   .proyectos_grid {
