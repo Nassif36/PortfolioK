@@ -486,11 +486,16 @@ input:checked+.slider:before {
     margin: 1em 0;
   }
   .proyectos_grid {
-    flex: 0 1 100%;
+    flex: 1 1 100%;
     grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
     width: 100%;
     background-color: #ffffff05;
-
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .proyecto {
+    margin: 0 auto;
   }
 }
 .proyecto {
