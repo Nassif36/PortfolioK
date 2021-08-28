@@ -470,9 +470,8 @@ input:checked+.slider:before {
 }
 @media (max-width: 1200px) {
   .swiper-container {
-    max-width: 95vw;
-    margin: 0 auto;
-    flex: 1 1 100%;
+    max-width: 100vw;
+
   }
 }
 .swiper-pagination-bullet-active {
@@ -511,6 +510,10 @@ input:checked+.slider:before {
   }
 }
 @media (max-width: 550px) {
+  .proyectos_grid {
+    max-width: inherit;
+    width: 100%;
+  }
   .proyectos_grid {
     grid-template-columns: 1fr;
   }
