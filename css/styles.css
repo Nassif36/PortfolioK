@@ -131,29 +131,24 @@ body {
       flex-direction: column;
       padding: 0;
       height: 25px;
+      margin: 0;
     }
     .barra {
-      
       padding:  0;
+    }
+    .nav li {
+      padding: .5em 0;
     }
     .barra_logo {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       width: 100%;
-      padding:.3em 2em;
+      padding:.3em;
       background-color: var(--secondary);
     }
     .barra_logo  h2{
       color: var(--primary);
-        
-        position: relative;
-        z-index: 15;
-        flex: 1;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
- 
-        justify-content: space-around;
+
     }
 
     .barra_nav {
@@ -174,14 +169,11 @@ body {
       padding: 0 15%;
      
     }
-    .nav li {
-      margin: .3em 0;
-    }
+
     .nav li a {
- 
       color: var(--primary-light);
     }
-    .barra.opened .barra_nav {
+    .barra_nav.opened {
         transform: translateX(0%);
         transition: transform .5s ease;
     }
@@ -440,11 +432,11 @@ input:checked+.slider:before {
   padding: 18vh 0;
   position: relative;
 
-  background-color: var(--primary);
+    background-color: #6b63ff9d;
 }
 .proyectos_flex {
   display: flex;
-  background-color: var(--primary);
+  background-color: #ffffff1e;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -469,7 +461,7 @@ input:checked+.slider:before {
 }
 .proyectos_grid {
   display: grid;
-  background-color: #6b63ff9d;
+
   padding: 2em;
   justify-content: center;
   align-items: center;
