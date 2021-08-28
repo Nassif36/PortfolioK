@@ -23,6 +23,18 @@
        menu.classList.toggle('opened');
    }));
 
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        var barraFixed = document.getElementById("barra");
+        if (prevScrollpos > currentScrollPos) {
+            barraFixed.style.top = "0";
 
+        } else {
+            barraFixed.style.top = "-14vh";
+
+        }
+        prevScrollpos = currentScrollPos;
+}
    
 

@@ -17,7 +17,7 @@
                     return true;
                 } else {
                     entry.target.classList.add("appear");
-                 
+                    appearOnScroll.unobserve(entry.target);
                     
                 }
             });

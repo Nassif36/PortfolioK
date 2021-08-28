@@ -12,11 +12,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;0,600;1,200&family=Libre+Franklin:wght@300;400;600&display=swap"
         rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 <body>
         
     <header class="site_header" id="inicio">
-        <div class="barra ">
+        <div class="barra " id="barra">
             <div class="contenedor">
 
             
@@ -193,66 +194,103 @@
                 <i class="fab fa-css3-alt"></i>
                 <p>estilizado</p>
             </div>
-            <div class="tecnologia slide-in from-up">
-                <h3>sass</h3>
-                <i class="fab fa-sass"></i>
-                <p>estilizado</p>
-            </div>
+           <div class="tecnologia slide-in from-up">
+               <h3>Git</h3>
+               <i class="fab fa-github"></i>
+               <p>Control de Versiones</p>
+           </div>
             <div class="tecnologia slide-in from-down">
                 <h3>js</h3>
                 <i class="fab fa-js"></i>
                 <p>interactividad</p>
             </div>
-            <div class="tecnologia slide-in from-left">
-                <h3>Git</h3>
-                <i class="fab fa-github"></i>
-                <p>Control de Versiones</p>
-            </div>
+            
         </div>
     </article>
 
     <article class="article_about" >
         <h3 class="title" id="about">acerca de mi</h3>
         <div class="about_flex contenedor" >
-            <div class="about_item ">
+            <div class="about_item fade-in from-left">
                 <img class="shadow" src="./img/vitae.jpg" alt="">
             </div>
-            <div class="about_item">
+            <div class="about_item fade-in from-right">
                 <p>Mi nombre es Khalil, soy autodidacta, me gusta trabajar en equipo y cumplir mis objetivos</p>
             </div>
         </div>
     </article>
     <main class="main_proyectos" id="proyectos">
         <div class="proyectos_flex contenedor" >
-            <div class="proyectos_texto fade-in from-left">
+            <div class="proyectos_texto  slide-in from-up">
                 <h3 class="title">proyectos</h3>
             </div>
-            <div class="proyectos_grid fade-in from-right">
-                <a class="proyecto" href="https://nassif36.github.io/MakeUpBeauty/">
-                    <div class="proyecto_img">
-                        <img src="./img/makeup.png" alt="">
+            
+            <div class="swiper-container slide-in from-down">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="proyectos_grid">
+                                <a class="proyecto" href="https://nassif36.github.io/MakeUpBeauty/">
+                                    <div class="proyecto_img">
+                                        <img src="./img/makeup.png" alt="">
+                                    </div>
+                                    <p>Make Up & Beauty</p>
+                                </a>
+                                <a class="proyecto" href="https://nassif36.github.io/ModaWinter/">
+                                    <div class="proyecto_img">
+                                        <img src="./img/moda.png" alt="">
+                                    </div>
+                                    <p>Moda </p>
+                                </a>
+                                <a class="proyecto" href="https://nassif36.github.io/hostelcarrusel/">
+                                    <div class="proyecto_img">
+                                        <img src="./img/carru.png" alt="">
+                                    </div>
+                                    <p>Hostel Carru</p>
+                                </a>
+                                <a class="proyecto" href="https://nassif36.github.io/watchshop/">
+                                    <div class="proyecto_img">
+                                        <img src="./img/watch.png" alt="">
+                                    </div>
+                                    <p>Watch Shop</p>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="proyectos_grid">
+                                <a class="proyecto" href="https://nassif36.github.io/lombrok/">
+                                    <div class="proyecto_img">
+                                        <img src="./img/LombroK.png" alt="">
+                                    </div>
+                                    <p>LombroK</p>
+                                </a>
+                                <a class="proyecto" href="https://nassif36.github.io/Engineer/">
+                                    <div class="proyecto_img">
+                                        <img src="./img/Engineer.png" alt="">
+                                    </div>
+                                    <p>Engineer</p>
+                                </a>
+                                <a class="proyecto" href="https://nassif36.github.io/scampnew/">
+                                    <div class="proyecto_img">
+                                        <img src="./img/scamp.png" alt="">
+                                    </div>
+                                    <p>Surf Camp</p>
+                                </a>
+                                <a class="proyecto" href="https://nassif36.github.io/Fragance/">
+                                    <div class="proyecto_img">
+                                        <img src="./img/fragance.png" alt="">
+                                    </div>
+                                    <p>Fragance</p>
+                                </a>
+
+                            </div>
+                        </div>
                     </div>
-                    <p>Make Up & Beauty</p>
-                </a>
-                <a class="proyecto" href="https://nassif36.github.io/ModaWinter/">
-                    <div class="proyecto_img">
-                        <img src="./img/moda.png" alt="">
-                    </div>
-                    <p>Moda </p>
-                </a>
-                <a class="proyecto" href="https://nassif36.github.io/hostelcarrusel/">
-                    <div class="proyecto_img">
-                        <img src="./img/carru.png" alt="">
-                    </div>
-                    <p>Hostel Carru</p>
-                </a>
-                <a class="proyecto" href="https://nassif36.github.io/watchshop/">
-                    <div class="proyecto_img">
-                        <img src="./img/watch.png" alt="">
-                    </div>
-                    <p>Watch Shop</p>
-                </a>
-      
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
             </div>
         </div>
     </main>
@@ -294,6 +332,27 @@
         </div>
     </div>
     <script src="js/observer.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+        speed: 1110,
+        delay: 180,
+         effect: 'cube',
+         cubeEffect: {
+         slideShadows: false,
+         },
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        },
+        });
+
+    </script>
 </body>
 </html>

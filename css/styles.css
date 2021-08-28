@@ -12,6 +12,8 @@
   --secondary: #0a0a0a;
   --secondary-light: #252525;
   --shadow-color: #0000001c;
+  --swiper-pagination-color: #ffffff;
+  --swiper-theme-color: #ffff;
 
 }
 [data-theme="dark"] {
@@ -20,6 +22,8 @@
   --secondary: white;
   --secondary-light: #fdfdfd;
   --shadow-color: #ffffff00;
+    --swiper-pagination-color: #ffffff;
+    --swiper-theme-color: #ffff;
 
 }
 
@@ -79,12 +83,12 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  left: 0;
-  right: 0;
+  display: block;
+  transition: top 1s;
+
   background-color: var(--primary-light);
   z-index: 5;
   border-bottom: 1px solid var(--shadow-color);
-  padding: 1em 0;
 }
 
 .barra .contenedor {
@@ -95,6 +99,7 @@ body {
 }
 .barra a {
   color: var(--secondary);
+
 }
 
 .barra_nav {
@@ -112,6 +117,7 @@ body {
 .nav li {
   flex-basis: 25%;
   max-width: max-content;
+  padding: 1.3em 0;
 }
 .barra button {
   display: none;
@@ -383,15 +389,7 @@ input:checked+.slider:before {
 }
 
 .article_about {
-background: #667db6;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
+  background: #ee0808b4;
   border-top: 1px solid var(--shadow-color);
   border-bottom: 1px solid var(--shadow-color);
 
@@ -422,8 +420,8 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
   width: 100%;
   max-width: 330px;
   border-radius: 100%;
-  border: 1px solid var(--secondary);
-  box-shadow: 13px 13px #eb20a718;
+  border: 1px solid var(--primary);
+
 }
 
 .about_item:nth-of-type(2) {
@@ -454,10 +452,16 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
   flex: 0 1 calc(33% - 1%);
 }
 
-
+.swiper-container {
+    flex:0 1 calc(60% - 1%);
+    width: 100%;
+    max-width: 45vw;
+}
+.swiper-pagination-bullet-active {
+  color: white!important;
+}
 .proyectos_grid {
   display: grid;
-  flex:0 1 calc(60% - 1%);
   background-color: #6b63ff9d;
   padding: 2em;
   justify-content: center;
@@ -496,6 +500,7 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
 }
 .proyecto_img img {
    filter:grayscale(1);
+   transition: all .8s ease;
 }
 .proyecto:hover .proyecto_img img {
   transform: scale(1.2);
@@ -623,11 +628,11 @@ justify-content: center;
   }
 
   .from-up {
-    transform: translateY(-55%);
+    transform: translateY(-45%);
   }
 
   .from-down {
-    transform: translateY(55%);
+    transform: translateY(45%);
   }
 
   .from-up.appear,
