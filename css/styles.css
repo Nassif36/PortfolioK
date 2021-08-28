@@ -136,9 +136,7 @@ body {
     .barra {
       padding:  0;
     }
-    .nav li {
-      padding: .5em 0;
-    }
+   
     .barra_logo {
       display: flex;
       justify-content: space-around;
@@ -157,7 +155,7 @@ body {
         transform: translateX(-300%);
         position: relative;
         z-index: -1;
-               padding: .5em 0;
+        padding: .5em 0;
         min-width: 100%;
         background-color: var(--secondary);
         transition: transform .5s ease;
@@ -165,11 +163,14 @@ body {
     .nav {
       flex-direction: column;
       justify-content: center;
+      width: 100%;
       align-items: flex-start;
-      padding: 0 15%;
      
     }
-
+     .nav li,
+     .theme-switch-wrapper {
+       padding: .5em 3em;
+     }
     .nav li a {
       color: var(--primary-light);
     }
@@ -273,7 +274,19 @@ input:checked+.slider:before {
   display: flex;
   justify-content: center;
   align-items:center;
+  padding: 1% 0;
   min-height: 100vh;
+  position: relative;
+}
+.svg_animation {
+position: absolute;
+  margin: 0 auto;
+  right: 0;
+  bottom: -9%;
+  width: 100%;
+  transform: scaleY(70%);
+  z-index: 0;
+  left: 0;;
 }
 
 .hero_item {
@@ -306,7 +319,7 @@ input:checked+.slider:before {
 /** TECNOLOGIAS **/
 .article_tecnologias {
   text-align: center;
-  background-color: var(--primary);
+  background-color: #5dc7f9;
 }
 
 .title {
