@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;0,600;1,200&family=Libre+Franklin:wght@300;400;600&display=swap"
         rel="stylesheet">
       <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   
 </head>
 <body>
         
@@ -217,7 +218,7 @@
                 <img class="shadow" src="./img/vitae.jpg" alt="">
             </div>
             <div class="about_item fade-in from-right">
-                <p>Mi nombre es Khalil, soy autodidacta, me gusta trabajar en equipo y cumplir mis objetivos</p>
+                <p>Mi nombre es Khalil, soy autodidacta y estoy listo para trabajar en equipo tanto como para realizar proyectos individuales.</p>
             </div>
         </div>
     </article>
@@ -322,23 +323,29 @@
             </div>
         </div>
     </main>
+    
+    </script>
     <footer class="footer_contacto">
         <h3 class="title" id="contacto">Contacto</h3>
         <div class="contacto_flex">
-            <form action="#">
+            <form action="https://formsubmit.co/92416837c70f1209f89661d3064e358a" method="POST">
                 <div class="campo">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="text" name="nombre" placeholder="Tú Nombre" required>
                 </div>
+                <input type="hidden" name="_captcha" value="false">
                 <div class="campo">
-                    <label for="asunto">Asunto</label>
-                    <input type="text" name="asunto" placeholder="Asunto">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" type="email"  placeholder="Email" required>
                 </div>
+
                 <div class="campo">
-                    <label for="texto">Mensaje</label>
-                    <textarea name="texto" placeholder="Tú consulta no molesta"></textarea>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea type="text" name="mensaje" placeholder="Tú consulta no molesta"></textarea>
                 </div>
-                 <button class="btn_form">
+
+                <input type="hidden" name="_next" value="https://nassif36.github.io/PortfolioK/#">
+                 <button type="submit" class="btn_form">
                      enviar
                  </button>
             </form>
@@ -386,5 +393,7 @@
         });
 
     </script>
+    
+
 </body>
 </html>

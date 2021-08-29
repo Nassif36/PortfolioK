@@ -398,16 +398,14 @@ input:checked+.slider:before {
 .fa-js {
   color: yellow;
 }
-
+/** about **/
 .article_about {
   background: #ee0808b4;
   border-top: 1px solid var(--shadow-color);
   border-bottom: 1px solid var(--shadow-color);
 
 }
-.article_about .title {
-  color: #f1f1f1;
-}
+
 .about_flex {
   display: flex;
   align-items: center;
@@ -429,7 +427,7 @@ input:checked+.slider:before {
 
 .about_item img {
   width: 100%;
-  max-width: 330px;
+  max-width: 250px;
   border-radius: 100%;
   border: 1px solid var(--primary);
 
@@ -443,6 +441,8 @@ input:checked+.slider:before {
 }
 .about_item p {
   max-width: 45ch;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 /** proyectos **/
 .main_proyectos {

@@ -41,5 +41,4 @@
         }
         prevScrollpos = currentScrollPos;
 }
-   
 
