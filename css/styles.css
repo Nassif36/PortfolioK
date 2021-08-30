@@ -84,9 +84,9 @@ body {
   top: 0;
   width: 100%;
   display: block;
-  transition: top 1s;
+  transition: top .7s;
 
-  background-color: var(--primary-light);
+  background-color: var(--primary);
   z-index: 15;
   border-bottom: 1px solid var(--shadow-color);
 }
@@ -118,7 +118,29 @@ body {
   flex-basis: 25%;
   max-width: max-content;
   padding: 1.3em 0;
+  font-weight: 400;
+    overflow-x: hidden;
+
 }
+.nav li:after {
+  content: '';
+  height: 2px;
+  background-color: var(--secondary);
+  display: block;
+  margin: .3em 0;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: transform .4s ease, text-shadow .2s ease;
+}
+.nav li:hover {
+  text-shadow: .4px .4px .4px var(--secondary-light);
+  
+}
+.nav li:hover:after {
+  transform: translateX(0);
+  overflow-x: visible;
+}
+
 .barra button {
   display: none;
 }
@@ -228,7 +250,7 @@ body {
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: var(--secondary-light);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -239,7 +261,7 @@ body {
 }
 
 .slider:before {
-  background-color: #fff;
+  background-color: var(--primary-light);
   bottom: 4px;
   content: "";
   height: 16px;
@@ -250,7 +272,7 @@ body {
 }
 
 input:checked+.slider {
-  background-color: #000000;
+  background-color: var(--secondary);
 }
 
 input:checked+.slider:before {
@@ -341,13 +363,15 @@ input:checked+.slider:before {
   justify-content:space-around;
   align-items: center;
   min-height: 60vh;
+  padding: 2em 0;
   flex-wrap: wrap;
 }
 .tecnologia {
   flex: 1 1 calc(23% - 3%);
   background-color: var(--primary-light);
-  padding: 1.5em 5em;
+  padding: 1.5em 5.5%;
   margin: .5em .3em;
+  width: 100%;
   box-shadow: 3px 3px 1px 3px var(--shadow-color);
   max-width: 150px;
   text-align: center;
@@ -368,7 +392,7 @@ input:checked+.slider:before {
  
 }
 .tecnologia i {
-  font-size: clamp(5.5rem, 6.2rem, 7rem);
+  font-size: clamp(5.5rem, 5.7rem, 6.1rem);
 }
 @media (max-width: 550px) {
   .title {
@@ -387,16 +411,16 @@ input:checked+.slider:before {
    padding: .5em 0;
 }
 .fa-html5 {
-  color: #ff2600;
+  color: #db4025;
 }
 .fa-css3-alt {
-  color: blue;
+  color: #1582e7;
 }
 .fa-sass {
   color: #eb20a7;
 }
 .fa-js {
-  color: yellow;
+  color: #e0e017;
 }
 /** about **/
 .article_about {
