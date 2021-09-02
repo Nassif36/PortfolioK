@@ -4,7 +4,7 @@
     const appearOptions = {
         root: null,
         threshold: 0,
-        rootMargin: "0px 0px -240px 0px"
+        rootMargin: "0px 0px -150px 0px"
     };
 
 
