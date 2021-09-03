@@ -394,7 +394,7 @@ input:checked+.slider:before {
 /** TECNOLOGIAS **/
 .article_tecnologias {
   text-align: center;
-  background-color: #5dc7f9;
+  background:#5dc7f9;
 }
 
 
@@ -474,20 +474,10 @@ input:checked+.slider:before {
 
 /** about **/
 .article_about {
-  background: #ee0808b4;
+
   border-top: 1px solid var(--shadow-color);
   border-bottom: 1px solid var(--shadow-color);
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#890505+0,ee0808+40,ee0808+60,ee0808+60,890505+99 */
-background: #890505;
-/* Old browsers */
-background: -moz-linear-gradient(-45deg, #890505 0%, #ee0808 40%, #ee0808 60%, #ee0808 60%, #890505 99%);
-/* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #890505 0%, #ee0808 40%, #ee0808 60%, #ee0808 60%, #890505 99%);
-/* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #890505 0%, #ee0808 40%, #ee0808 60%, #ee0808 60%, #890505 99%);
-/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#890505', endColorstr='#890505', GradientType=1);
-/* IE6-9 fallback on horizontal gradient */
+  background-color: var(--primary-light);
 
 }
 
@@ -530,10 +520,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#890505', endC
 }
 
 .about_text {
-  background-color: var(--primary-light);
+  background-color: var(--secondary-light);
   box-shadow: 1px 1px 3px var(--shadow-color);
   padding: .4em .5em;
   margin: 1em;
+  color: var(--primary-light);
   border-radius: 1px;
 }
 
@@ -554,8 +545,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#890505', endC
 
 .random {
   font-size: 1rem;
-  color: var(--secondary);
-  background-color: var(--primary-light);
+  color: var(--primary);
+  background-color: var(--secondary-light);
   text-align: center;
   padding: .4em .6em;
   max-width: max-content;
