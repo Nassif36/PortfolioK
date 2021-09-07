@@ -164,6 +164,7 @@ body {
   padding: 1.3em 0;
   font-weight: 400;
   overflow-x: hidden;
+ 
 
 }
 
@@ -172,7 +173,7 @@ body {
   height: 2px;
   background-color: var(--secondary);
   display: block;
-  margin: .3em 0;
+  margin: .1em 0 0 0;
   width: 100%;
   transform: translateX(-100%);
   transition: transform .4s ease, text-shadow .2s ease;
