@@ -578,6 +578,7 @@ input:checked+.slider:before {
     padding: .3em;
     margin-right: auto;
     font-size: 1rem;
+    max-width: 170px;
     margin-left: 0;
   }
 }
