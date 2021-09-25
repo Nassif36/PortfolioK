@@ -345,6 +345,12 @@ input:checked+.slider:before {
 /** DESARROLLA **/
 .article_hero {
   background-color: var(--primary-light);
+  background: #00B4DB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -354,7 +360,7 @@ input:checked+.slider:before {
   align-items: center;
   padding: 1% 0;
   min-height: 100vh;
-
+  
 }
 
 
@@ -395,7 +401,13 @@ input:checked+.slider:before {
 /** TECNOLOGIAS **/
 .article_tecnologias {
   text-align: center;
-  background:#5dc7f9;
+  background: #00B4DB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 
@@ -578,7 +590,7 @@ input:checked+.slider:before {
   .random {
     padding: .3em;
     margin-right: auto;
-    font-size: 1rem;
+    font-size: .8rem;
     max-width: 170px;
     margin-left: 0;
   }
