@@ -542,7 +542,7 @@ input:checked+.slider:before {
 
 .acerca_random {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   gap: 2rem 1rem;
   padding: 0 1em;
@@ -555,7 +555,7 @@ input:checked+.slider:before {
   background-color: var(--primary);
   text-align: center;
   padding: .4em .6em;
-  max-width: max-content;
+
   width: 100%;
   font-family: 'Libre Franklin',
     sans-serif;
