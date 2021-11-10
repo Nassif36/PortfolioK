@@ -109,6 +109,8 @@ body {
   z-index: 12;
 }
 
+
+@media (min-width: 768px) {
 .title:after {
   content: '';
   display: block;
@@ -117,6 +119,7 @@ body {
   background-color: var(--primary);
 
   height: 2px;
+}
 }
 
 
@@ -574,19 +577,16 @@ input:checked+.slider:before {
     gap: 1em .3em;
     padding: 0 1em;
     width: 100%;
-    min-width: 80vw;
+
 
   }
   .midline::after {
     display: none;
   }
-  .about_item img {
-    max-width: 220px;
-  }
+
   .random {
     padding: .5em;
-    max-width: 250px;
-    min-width: 100%;
+ 
 
   }
 }
