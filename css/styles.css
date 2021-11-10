@@ -502,12 +502,18 @@ input:checked+.slider:before {
 @media (max-width: 550px) {
   .about_flex {
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+  }
+  .about_item {
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .about_item {
   width: 100%;
+
 }
 
 .about_item{
@@ -564,16 +570,14 @@ input:checked+.slider:before {
     sans-serif;
   text-transform: uppercase;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items:center;
+
 }
 
 
 @media (max-width: 600px) {
   .acerca_random {
     grid-template-columns: 1fr;
-    place-content: center;
+
     gap: 1em .3em;
     padding: 0 1em;
     width: 100%;
